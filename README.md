@@ -3,8 +3,11 @@ Application responsible for the sales business. It manages the registration of u
 
 _note: this project is fictitious and has the purpose of studying the layer architeture style_ =)
 
-# Setup
-...
+# Installing
+* Build the project
+```bash
+mvn clean spring-boot:run
+```
 
 # Migrations
 ...
