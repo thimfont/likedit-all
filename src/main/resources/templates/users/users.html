@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Lista de Usuários</h1>
+<table>
+    <thead>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Email</th>
+    </thead>
+
+    <tbody>
+    <tr th:if="${users.empty}">
+        <td colspan="3">Nenhum usuário disponível.</td>
+    </tr>
+
+    <tr th:each="user : ${users}">
+        <td><span th:text="${user.id}">Id</span></td>
+        <td><span th:text="${user.name}">Nome</span></td>
+<!--        <td><span th:text="${user.email}">Email</span></td>-->
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -12,13 +12,13 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/api/users")
+public class UsersController {
 
     private UserService userService;
 
     @Autowired
-    public UserController(final UserService userService) {
+    public UsersController(final UserService userService) {
         this.userService = userService;
     }
 
