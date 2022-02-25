@@ -5,12 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
+<a href="/">Home</a>
+<a href="#">Novo</a>
 <h1>Lista de Usuários</h1>
 <table>
     <thead>
     <th>Id</th>
     <th>Nome</th>
     <th>Email</th>
+    <th>Acões</th>
     </thead>
 
     <tbody>
@@ -21,7 +24,9 @@
     <tr th:each="user : ${users}">
         <td><span th:text="${user.id}">Id</span></td>
         <td><span th:text="${user.name}">Nome</span></td>
-<!--        <td><span th:text="${user.email}">Email</span></td>-->
+        <td><span >email@teste.com</span></td>
+        <td><a href="#">editar</a></td>
+        <td><a href="#">excluir</a></td>
     </tr>
     </tbody>
 </table>
